@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        // Crear un código que reciba como parámetro un array de números y devuelva el mayor.
+
+        // Defino el arreglo sin tamaño.
+        var arreglo=[]
+        //Inicio la variable mayor en posición 0 para empezar a contabilizar.
+        var mayor=[0]
+        // Pido dato para ingresar el tamaño del arreglo.
+        var cantidad = parseInt(prompt('Ingrese la cantidad de números que va a tener el array',''))
+        
+        // Agrego los elementos a la lista.
+        for(var i = 0; i < cantidad; i++){
+            var valores = parseInt(prompt('Ingrese el valor'))
+            arreglo.push(parseInt(valores))
+        }
+// Calculo el mayor.
+        for (var i=0; i < arreglo.length; i++){
+            if (arreglo[i] > mayor){
+                mayor = arreglo[i]
+            }
+        }
+        // Imprimo en pantalla.
+        document.write('El elemento mayor es ', mayor)
+    </script>
+</body>
+</html>

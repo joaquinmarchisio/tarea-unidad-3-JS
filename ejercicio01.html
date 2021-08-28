@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1: Dada una cierta distancia determinar el medio de transporte apropiado de acuerdo a las siguientes reglas: 0 a 1000m = pie; 1000 a 10000=bicicleta; 10000 a 30000=colectivo; 30000 a 100000=auto; +100000=avión.
+
+        // Defino variables.
+        var distancia
+
+        // Pido valor.
+        distancia=prompt('Ingrese la distancia a recorrer: ', '')
+
+        // Convierto el string a numérico.
+        distancia=parseInt(distancia)
+
+        // Resuelvo con estructura de control.
+        if (distancia<=1000){
+            document.write('el transporte apropiado es a pie')
+        }else{
+            if (distancia>1000 && distancia<=10000){
+                document.write('el transporte apropiado es bicicleta')
+            }
+            else{
+                if(distancia>10000 && distancia<=30000){
+                    document.write('el transporte apropiado es colectivo')
+                }
+                else{
+                    if (distancia>30000 && distancia<=100000){
+                        document.write('el transporte apropiado es auto')
+                    }
+                    else{
+                        document.write('el transporte apropiado es a avión')
+                    }
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
